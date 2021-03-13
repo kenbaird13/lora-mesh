@@ -82,7 +82,7 @@ void setup() {
   Serial.println(freeMem());
 }
 
-const __FlashStringHelper* getErrorString(uint8_t error) {
+const FlashStringHelper* getErrorString(uint8_t error) {
   switch(error) {
     case 1: return F("invalid length");
     break;
